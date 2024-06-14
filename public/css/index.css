@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 110px;
+    background:white ;
+    opacity: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 0px black;
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navigation {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    gap: 60px;
+    align-items: center;  
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+  
+.nav-link:hover {
+    opacity: 1;
+}
+  
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #FF975D;
+}
+  
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 18px;
+}
+  
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.bg {
+    background-position: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.judul{
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 55px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.row1 {
+    color: black;
+    display: flex;
+    gap: 50px;
+    height: 500px;
+    align-items: center;  
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.makan1{
+    height: 360px;
+    width: 300px;
+    align-items: center; 
+    border: none;
+    margin:0 auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+}
+
+.imeg {
+    height: 190px;
+    width: 255px;
+    align-items: center; 
+    border: none;
+    margin-top: -25px ;
+    border-radius: 20px;    
+}
+
+.row2 {
+    color: black;
+    display: flex;
+    gap: 50px;
+    height: 500px;
+    align-items: center;  
+    text-align: center;
+    margin:0 auto;
+}
+
+.minum1 {
+    height: 360px;
+    width: 300px;
+    align-items: center; 
+    border: none;
+    margin:0 auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+}
+
+.up{
+    padding-top: 16px;
+    font-size:larger;
+}
+
+.harga{
+    padding-top: 13px;
+    font-size:larger;
+}
+
+.menu{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    background-color:#FFAA5B;
+    color:white;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+    cursor: pointer;
+}
+
+.teks3{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 80px;
+    bottom:70%;
+    left:20%;
+    text-align: center;
+    color: white;
+}
+
+.teks4{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size:30px;
+    bottom:22%;
+    left:10%;
+    text-align: center;
+    width: 700px;
+    color: white;
+}
+
+.abt{
+    height: 750px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.us{
+    position: absolute;
+    bottom:1px;
+    left: 65%;
+    height: 880px;
+    width: 550px;
+    flex-wrap: wrap;
+}
+
+.circle{
+    margin-bottom: 0px;
+    margin-top: 90px;
+    height: 800px;
+    margin-left: 0px;
+}
+
+.judul1{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 70px;
+    padding-top: 350px;
+    margin-right: 8%;
+    float: right;      
+}
+
+.teks{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-left: 325px;
+    position:relative;
+    bottom: 400px;
+    left: 90px;
+}
+
+.menu1{
+    position: relative;
+    bottom: 350px;
+    left: 850px;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    background-color:#FFAA5B;
+    color:white;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+    cursor: pointer;
+}
+
+.foot{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 23%;
+    
+}
+
+.footer{
+    font-size: 15px;
+    padding-top: 50px;
+    margin-left: 30px;
+    width: 700px;
+    font-family: "Kantumruy Pro", sans-serif;
+    white-space: 50px;
+    
+}
+
+.mapmap{
+    margin-top: -350px;
+    float:right;
+    padding-right: 20px;
+}
+
+.SOSMEDBX1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.SOSMEDBX2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.fb{
+    font-size: 15px;
+}
+
+.SOSMED{
+    cursor: pointer;
+}
+
+.SOSMED2 {
+    cursor: pointer;
+}
+
+body{
+    background-image: url('/images/3bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+@media only screen and (max-width:750px)  {
+    .us{
+        height:300px; 
+        width:150px;
+    }
+    .abt{
+    height:280px
+    }
+    .mapmap{
+        height: 180px;
+        width: 220px;
+    }
+    .SOSMED, .SOSMED2{
+        width: 20px;
+        height: 20px;
+    }
+    .logo{
+        height: 40px;
+        width: 40px;
+    }
+    .navigation{
+        gap: 20px;
+    }
+    header{
+        padding: 0 20px;
+    }
+}

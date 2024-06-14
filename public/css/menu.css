@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 110px; 
+    background:white ;
+    opacity: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navigation {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    gap: 60px;
+    align-items: center;  
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+  
+.nav-link:hover {
+    opacity: 1;
+}
+  
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #FF975D;
+}
+  
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 18px;
+}
+  
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.judul{
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 120px;
+}
+
+.kepala{
+    text-align: left;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    margin-left: 42px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.imeg {
+    height: 190px;
+    width: 255px;
+    align-items: center; 
+    border: none;
+    margin-top: -55px ;
+    border-radius: 20px;
+}
+
+
+.food {
+    color: black;
+    display: flex;
+    gap: 59px;
+    align-items: center;  
+    text-align: center;
+}
+
+.makan1{
+    height: 360px;
+    width: 280px;
+    align-items: center; 
+    border: none;
+    margin-left: 42px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+}
+
+.drink {
+    color: black;
+    display: flex;
+    gap: 59px;
+    align-items: center;  
+    text-align: center;
+}
+
+.minum1 {
+    height: 360px;
+    width: 280px;
+    align-items: center; 
+    border: none;
+    margin-left: 42px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+}
+
+.up{
+    padding-top: 13px;
+    font-size:larger;
+}
+
+
+.star{
+    display: none;
+}
+
+.fa-star{
+    margin-top: 10px;
+    font-size: 20px;
+    color:black;
+    transition: all o.2 ease;
+}
+
+.fa-star:hover{
+    color:yellow;
+}
+
+
+.foot{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 500px;
+    margin-top: 200PX;
+    
+}
+
+.footer{
+    margin-left: 200px;
+    width: 300px;
+    font-family: "Kantumruy Pro", sans-serif;
+    white-space: 50px;
+    
+}
+
+.mapmap{
+    margin-top:-305px;
+    float:right;
+    padding-right: 150px;
+}
+
+.SOSMEDBX1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 235px;
+    margin-top: 20px;
+}
+
+.SOSMEDBX2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.SOSMED{
+    cursor: pointer;
+}
+
+.SOSMED2 {
+    cursor: pointer;
+}
+
+.star{
+    display: none;
+}
+
+.fa-star{
+    margin-top: 10px;
+    font-size: 20px;
+    color:black;
+    transition: all o.2 ease;
+}
+
+.fa-star:hover{
+    color:yellow;
+}

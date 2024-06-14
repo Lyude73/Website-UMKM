@@ -1,0 +1,392 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 110px;
+    background:white ;
+    opacity: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 97;
+    box-shadow: 0px 0px 10px 0px black;
+    overflow: hidden;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.navigation {
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    gap: 60px;
+    align-items: center;  
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+  
+.nav-link:hover {
+    opacity: 1;
+}
+  
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #FF975D;
+}
+  
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 18px;
+}
+  
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.bg {
+    background-position: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.judul{
+    text-align: center;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    margin-top: 120px;
+}
+
+.give{
+    font-family: "Inter", sans-serif;
+    font-weight: 100px;
+    font-size: 30px;
+    margin-top:50px;
+}
+
+.menu{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    background-color:#FFAA5B;
+    color:white;
+    box-shadow: 0px 0px 10px 2px #CFCFCF;
+    cursor: pointer;
+}
+
+.box{
+    background-color:#F5F5F5 ;
+    width: 80%;
+    height: 200px;
+    margin: 0 Auto;
+    box-shadow:0px 0px 10px 2px #CFCFCF;
+}
+
+.rating{
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+.rating, .fa-star{
+    color: gold;
+}
+
+.fa-star{
+    font-size:30px;
+    color:#CFCFCF;
+    transition: all 0.2s ease;
+    
+}
+
+.fa-star.checked {
+    color: gold;
+}
+
+.dot{
+    float:right;
+    position: relative;
+    right: 20px;
+    color: #CACACA;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80%;
+    gap:15px;
+}
+
+.Nama{
+    background: transparent;
+    border: none;
+}
+
+.Nama1{
+    height: 80px;
+    background: transparent;
+    border: none;
+}
+
+.selection-box{
+    float: right;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+    top: -20px;
+    right: -75px;
+    height: 73px;
+    width: 60px;
+    background-color:#F1F1F1;
+    box-shadow:0px 0px 10px 2px #CFCFCF;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.edit-box{
+    text-decoration: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+a:link { text-decoration: none; }
+
+.delete-box{
+    border: none;
+    font-size: 16px;
+    padding-top: 5px;
+    color: #FF975D;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 98;
+    display: none;
+}
+
+.komen.visible + .overlay {
+    display: block;
+}
+
+.komen{
+    position: fixed;    
+    display: none;
+    left: 20%;
+    top: 20%;
+    width:60%;
+    height: 70%;
+    background-color: white;
+    border: none;
+    border-radius: 18px;
+    z-index: 99;
+}
+
+.komen.visible {
+    display: block;
+}
+
+.comment-form {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    border:none;
+}
+
+.usn {
+    width: 95%;
+    transform: translateY(-20%);
+    position: relative;
+    bottom: 18px;
+    padding: 10px;
+    border: 2px solid #FF975D;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.comment-text {
+    resize: none;
+    position: relative;
+    bottom: 8px;
+    align-items: center;
+    width: 95%;
+    height: 275px;
+    border: 2px solid #FF975D;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    padding-top: 10px;
+}
+
+.comment-input,
+.comment-text {
+    width: 95%;
+    padding: 10px;
+    border-color: #FF975D;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-text::placeholder {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+}
+
+
+.cancel{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FF975D;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    background-color: #e78b4d;
+}
+
+.write{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    top:-55px;
+}
+
+.share{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #FF975D;
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    position: relative;
+    top:-90px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.share:hover {
+    background-color: #e78b4d;
+}
+
+.rating1{
+    position: relative;
+    left:360px;
+    top:-40px;
+    color: #FF975D;
+    cursor: pointer;
+}
+
+.rating1 .fa-star:checked,
+.fa-star:hover {
+    color: gold;
+    
+}
+
+.isi{
+    height: 80px;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80%;
+    gap:15px;
+}
+
+.foot{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.footer{
+    margin-left: 200px;
+    width: 300px;
+    font-family: "Kantumruy Pro", sans-serif;
+    white-space: 50px;
+}
+
+.mapmap{
+    margin-top:-305px;
+    float:right;
+    padding-right: 150px;
+}
+
+.SOSMEDBX1{
+    display: inline-block;
+    text-align: center;
+    margin-left: 235px;
+    margin-top: 20px;
+}
+
+.SOSMEDBX2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+.SOSMED{
+    cursor: pointer;
+}
+
+.SOSMED2 {
+    cursor: pointer;
+}
